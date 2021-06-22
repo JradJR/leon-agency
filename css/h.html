@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+           width: 200;
+           height: 200;
+           background: #dd6b4d;
+          margin: 50px auto;
+          position: relative;
+         }
+         .special {
+           width: 50px;
+           height: 50px;
+           background-color: #FBE18C;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           position: absolute;
+         }
+         .one{
+           width: 80px;
+           height: 50px;
+           background-color: #A3A368;
+           position: absolute;
+           top: 0;
+           left: 0;
+          
+         }
+         .one:first-child {
+             top: 40px
+         }
+       </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="special"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+      
+      </div>
+</body>
+</html>
