@@ -9,6 +9,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /* global rules */
 * {
@@ -18,6 +19,7 @@ html{
 }
 body {
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .special-heading {  
@@ -81,8 +83,9 @@ body {
 }
 .header .links {
     position: relative;
+    cursor: pointer;
 }
-.header .links:hover .icon span:nth-child(2) {
+.header .links.clicked .icon span:nth-child(2) {
     width: 100%;
 }
 .header .links .icon{
@@ -124,7 +127,7 @@ body {
     top: -20px;
     right: 5px;
 }
-.header .links:hover  ul {
+.header .links.clicked  ul {
     display: block;
 }
 .header .links ul li:not(li:last-child) a{
@@ -276,7 +279,7 @@ body {
 
     .services .services-content .col .image img:hover {
         transform: translateX(-5px) scale(1.03);
-        filter: grayscale(0);
+        filter: grayscale(0.5);
         
     }
      .services .services-content .serv:hover i {
@@ -308,7 +311,7 @@ body {
 @media (min-width: 767px) {
     .portfolio .portfolio-content .card img {
         transition: .3s;
-        filter: grayscale(60%);
+        filter: grayscale(30%);
     }
     .portfolio .portfolio-content .card img:hover {
         transform: scale(1.05);
@@ -323,6 +326,7 @@ body {
 .portfolio .portfolio-content .card .info h3 {
     margin: 0;
     font-size: 20px;
+    color: var(--secondary-color);
 }
 .portfolio .portfolio-content .card .info p {
     line-height: 1.4;
@@ -449,7 +453,6 @@ body {
     transition: .3s;
 }
 .contact .info .link:hover {
-    transform: scale(1.02);
     color: #10cab780;
 }
 .contact .info .social-media {

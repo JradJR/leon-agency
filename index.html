@@ -133,21 +133,21 @@
             <p>If you do it right, it will last forever.</p>
             <div class="portfolio-content">
                 <div class="card">
-                    <img src="images/portfolio-1-new.jpeg" alt="">
+                    <a href="#"><img src="images/portfolio-1-new.jpeg" alt=""></a>
                     <div class="info">
                         <h3>Project Here</h3>
                         <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/web-design-2.jpg" alt="">
+                    <a href="#"><img src="images/web-design-2.jpg" alt=""></a>
                     <div class="info">
                         <h3>Project Here</h3>
                         <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/portfolio-3.jpeg" alt="">
+                    <a href="#"><img src="images/portfolio-3.jpeg" alt=""></a>
                     <div class="info">
                         <h3>Project Here</h3>
                         <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
@@ -195,9 +195,9 @@
                 <a class="link" href="mailto:leonagency@mail.com">leonagency@mail.com</a>
                 <div class="social-media">
                     Find Us On Social Media Networks 
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook"></i>
+                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com"> <i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>
@@ -208,5 +208,11 @@
         &copy; 2021 <span>Leon</span> All Right Reserved
     </div>
     <!-- end footer -->
+
+    <script>
+      document.querySelector('.header .links').onclick = function() {
+        this.classList.toggle('clicked');
+      }
+    </script>
 </body>
 </html>
