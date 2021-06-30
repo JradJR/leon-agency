@@ -396,10 +396,10 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 20px 10px rgb(189 188 188 / 50%);
     transition: .3s;
-
+    transform-origin: bottom;
 }
 .about .about-content .image img:hover {
-    transform: translatey(-10px) scale(1.05);
+    transform: scale(1.05);
 }
 .about .about-content .text {
     flex-basis: calc(100% - 500px);
@@ -461,6 +461,11 @@ body {
 .contact .info .social-media i {
     margin-left: 10px;
     color: var(--secondary-color);
+    transition: .3s;
+}
+.contact .info .social-media i:hover {
+  color: var(--main-color);
+  transform: scale(1.2);
 }
 
 /* End contact */
